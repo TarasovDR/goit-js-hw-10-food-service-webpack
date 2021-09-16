@@ -8,8 +8,10 @@ const themeSwitchInput = document.querySelector('#theme-switch-toggle');
 
 themeSwitchInput.addEventListener('change', onSwitchClick);
 
-const savedTheme = localStorage.getItem('theme'); // null
-const isSwitchInputChecked = JSON.parse(localStorage.getItem('isSwitchChecked')); // null
+const savedTheme = localStorage.getItem('theme');
+const isSwitchInputChecked = JSON.parse(
+  localStorage.getItem('isSwitchChecked'),
+);
 
 if (savedTheme != null || Theme.DARK) {
   body.classList.add(savedTheme);

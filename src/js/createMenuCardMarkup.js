@@ -1,5 +1,5 @@
 import menuCardTpl from '../templates/menu-card.hbs';
-import menu from '../menu.json';
+import menu from '../data/menu.json';
 
 const menuContainer = document.querySelector('.js-menu');
 const cardsMarkup = createMenuCardsMarkup(menu);
